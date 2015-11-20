@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Name:		Sean Glover
+        Class:		CIS 114 - JavaScript/jQuery
+        Assignment:	Lesson 03 - slideshow
+        Due: 		4/28/13
+    -->
+    <meta charset="utf-8" />
+    <title>Slideshow</title>
+
+    <style type="text/css">
+        span#close {
+            position: absolute;
+            left: 420px;
+            top: 20px;
+        }
+
+        div#controls {
+            width: 250px;
+            position: relative;
+            left: 85px;
+            top: 30px;
+        }
+
+        span#span_start_stop {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+    <script type="text/javascript" src="scripts/slideshow.js"></script>
+</head>
+
+
+<body>
+    <h1>Slideshow of images</h1>
+
+    <span id="close"><a href="" name="close_ss_nm" id="close_ss">[ Close ]</a></span>
+
+    <figure>
+        <img id="slideshowimage" src="images/img1.jpg" alt="" title="" width="400" height="300" />
+        <figcaption id="imageCaption">
+            Image 1 caption
+        </figcaption>
+    </figure>
+
+    <div id="controls">
+        <a href="#" name="back_nm" id="back">&lt;&lt; Previous</a>&nbsp;&nbsp;&nbsp;<span id="span_start_stop"><a href="#" name="start_stop_nm" id="start_stop">Start</a></span>&nbsp;&nbsp;&nbsp;<a href="#" name="forward_nm" id="forward">Next >></a>
+    </div>
+</body>
+</html>
+
+
